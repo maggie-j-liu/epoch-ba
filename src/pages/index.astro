@@ -18,19 +18,21 @@ import Glow from "../components/Glow.astro";
     />
   </head>
   <body class="bg-black text-white">
-    <div class="relative min-h-screen font-mono">
+    <div class="relative min-h-screen overflow-x-hidden font-mono">
       <div class="py-16 px-8">
-        <div class="absolute left-0 right-0 bottom-0"><Bridge /></div>
-        <div class="flex w-fit flex-col items-center pl-12">
-          <div class="w-fit">
+        <div class="absolute left-0 right-0 bottom-0 -z-10"><Bridge /></div>
+        <div class="flex flex-col items-center lg:w-fit lg:pl-12">
+          <div>
             <div class="flex h-4 justify-between">
               <div class="h-full w-7 border-t border-l border-white"></div>
               <div class="h-full w-7 border-t border-r border-white"></div>
             </div>
             <h1 class="flex w-fit flex-col items-end pl-14 pr-16 uppercase">
-              <Glow as="div" class="font-fira text-9xl font-bold">Ep0ch</Glow>
+              <Glow as="div" class="font-fira text-8xl sm:text-9xl font-bold"
+                >Ep0ch</Glow
+              >
               <div
-                class="-mt-12 translate-y-9 text-4xl font-semibold text-epoch-lighter"
+                class="-mt-12 translate-y-9 text-2xl font-semibold text-epoch-lighter sm:text-4xl"
               >
                 Bay Area
               </div>
@@ -40,8 +42,15 @@ import Glow from "../components/Glow.astro";
               <div class="h-full w-7 border-b border-r border-white"></div>
             </div>
           </div>
-          <div class="mt-20 text-xl font-semibold">
-            December 30th &bull; 9am - 9pm
+          <div
+            class="mt-20 flex flex-col space-x-2 text-center text-xl font-semibold sm:flex-row"
+          >
+            <span>December 30th</span>
+            <span class="hidden text-gray-400 sm:block">&bull;</span>
+            <span class="font-normal leading-none text-gray-400 sm:hidden"
+              >~</span
+            >
+            <span>9am - 9pm</span>
           </div>
           <button
             class="mt-4 bg-epoch-light px-8 py-2.5 text-xl font-semibold text-black"
