@@ -19,55 +19,74 @@ import Glow from "../components/Glow.astro";
   </head>
   <body class="bg-black text-white">
     <div class="relative min-h-screen overflow-x-hidden font-mono">
-      <div class="py-16 px-8">
+      <div class="py-16 px-4">
         <div class="absolute left-0 right-0 bottom-0 -z-10"><Bridge /></div>
-        <div class="flex flex-col items-center lg:w-fit lg:pl-12">
-          <div>
-            <div class="flex h-4 justify-between">
-              <div class="h-full w-7 border-t border-l border-white"></div>
-              <div class="h-full w-7 border-t border-r border-white"></div>
-            </div>
-            <h1 class="flex w-fit flex-col items-end pl-14 pr-16 uppercase">
-              <Glow as="div" class="font-fira text-8xl sm:text-9xl font-bold"
-                >Ep0ch</Glow
-              >
-              <div
-                class="-mt-12 translate-y-9 text-2xl font-semibold text-epoch-lighter sm:text-4xl"
-              >
-                Bay Area
+        <div class="flex flex-col lg:px-16">
+          <div class="flex flex-col items-center lg:w-fit">
+            <div>
+              <div class="flex h-4 justify-between">
+                <div class="h-full w-7 border-t border-l border-white"></div>
+                <div class="h-full w-7 border-t border-r border-white"></div>
               </div>
-            </h1>
-            <div class="flex h-4 justify-between">
-              <div class="h-full w-7 border-b border-l border-white"></div>
-              <div class="h-full w-7 border-b border-r border-white"></div>
+              <h1 class="flex w-fit flex-col items-end pl-14 pr-16 uppercase">
+                <Glow as="div" class="font-fira text-8xl sm:text-9xl font-bold"
+                  >Ep0ch</Glow
+                >
+                <div
+                  class="-mt-12 translate-y-9 text-2xl font-semibold text-epoch-lighter sm:text-4xl"
+                >
+                  Bay Area
+                </div>
+              </h1>
+              <div class="flex h-4 justify-between">
+                <div class="h-full w-7 border-b border-l border-white"></div>
+                <div class="h-full w-7 border-b border-r border-white"></div>
+              </div>
             </div>
+            <div
+              class="mt-16 flex flex-col space-x-2 text-center text-xl font-semibold sm:flex-row"
+            >
+              <span>December 30th</span>
+              <span class="hidden text-gray-400 sm:block">&bull;</span>
+              <span class="font-normal leading-none text-gray-400 sm:hidden"
+                >~</span
+              >
+              <span>9am - 9pm</span>
+            </div>
+            <button
+              class="mt-4 bg-epoch px-8 py-2.5 text-xl font-semibold text-black"
+              >Register</button
+            >
           </div>
           <div
-            class="mt-20 flex flex-col space-x-2 text-center text-xl font-semibold sm:flex-row"
+            class="mx-auto mt-16 max-w-2xl space-y-6 text-center sm:text-xl lg:mx-0 lg:max-w-3xl lg:text-left"
           >
-            <span>December 30th</span>
-            <span class="hidden text-gray-400 sm:block">&bull;</span>
-            <span class="font-normal leading-none text-gray-400 sm:hidden"
-              >~</span
-            >
-            <span>9am - 9pm</span>
+            <p>
+              Join us for an epic 12 hours of <span class="text-epoch-light"
+                >building projects</span
+              >, <span class="text-epoch-light">socializing</span>, and <span
+                class="text-epoch-light">fun</span
+              >.
+            </p>
+            <p>
+              Whether you've never written a line of code, or you've been
+              hacking for years, we'd love for you to come!
+            </p>
+            <p>
+              Epoch BA is a hackathon organized by the attendees. Come organize
+              with us in the
+              <a
+                class="text-epoch-light underline duration-300 hover:text-epoch-lighter hover:duration-150"
+                >#epoch-ba</a
+              > channel in the <a
+                class="text-epoch-light underline duration-300 hover:text-epoch-lighter hover:duration-150"
+              >
+                Hack Club Slack</a
+              >.
+            </p>
           </div>
-          <button
-            class="mt-4 bg-epoch-light px-8 py-2.5 text-xl font-semibold text-black"
-            >Register</button
-          >
         </div>
-        <div class="absolute bottom-4 left-6 text-gray-400">
-          Epoch BA is a hackathon organized by the attendees. Join us in the
-          <a
-            class="underline duration-300 hover:text-gray-100 hover:duration-150"
-            >#epoch-ba</a
-          > channel in the <a
-            class="underline duration-300 hover:text-gray-100 hover:duration-150"
-          >
-            Hack Club Slack</a
-          >.
-        </div>
+        <div class="absolute bottom-4 left-6 text-gray-400"></div>
       </div>
     </div>
   </body>
