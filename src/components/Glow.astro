@@ -1,0 +1,30 @@
+---
+import Repeat from "./Repeat.astro";
+
+const { as: Tag } = Astro.props;
+const className = Astro.props.class || "";
+---
+
+<div class={`relative max-w-max ${className}`}>
+  <Tag className={"z-10 relative"}><slot /></Tag>
+  <span
+    class="absolute inset-0 select-none text-epoch blur-md"
+    aria-hidden={true}
+  >
+    <slot />
+  </span>
+  <span
+    class="absolute inset-0 select-none text-epoch blur-xl"
+    aria-hidden={true}
+  >
+    <slot />
+  </span>
+  <Repeat count={2}>
+    <span
+      class="absolute inset-0 select-none text-epoch blur-3xl"
+      aria-hidden={true}
+    >
+      <slot />
+    </span>
+  </Repeat>
+</div>

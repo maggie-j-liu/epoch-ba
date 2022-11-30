@@ -1,4 +1,6 @@
 ---
+import Bridge from "../components/Bridge.astro";
+import Glow from "../components/Glow.astro";
 ---
 
 <html lang="en">
@@ -8,30 +10,55 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Epoch Bay Area</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-black text-white">
-    <div class="py-16 px-8">
-      <div class="w-fit">
-        <div class="flex h-4 justify-between">
-          <div class="h-full w-7 border-t border-l border-white"></div>
-          <div class="h-full w-7 border-t border-r border-white"></div>
-        </div>
-        <h1 class="flex w-fit flex-col items-end px-12 font-mono uppercase">
-          <div class="text-9xl font-bold">Ep0ch</div>
-          <div class="-mt-12 translate-y-9 text-4xl font-semibold">
-            Bay Area
+    <div class="relative min-h-screen font-mono">
+      <div class="py-16 px-8">
+        <div class="absolute left-0 right-0 bottom-0"><Bridge /></div>
+        <div class="flex w-fit flex-col items-center pl-12">
+          <div class="w-fit">
+            <div class="flex h-4 justify-between">
+              <div class="h-full w-7 border-t border-l border-white"></div>
+              <div class="h-full w-7 border-t border-r border-white"></div>
+            </div>
+            <h1 class="flex w-fit flex-col items-end pl-14 pr-16 uppercase">
+              <Glow as="div" class="font-fira text-9xl font-bold">Ep0ch</Glow>
+              <div
+                class="-mt-12 translate-y-9 text-4xl font-semibold text-epoch-lighter"
+              >
+                Bay Area
+              </div>
+            </h1>
+            <div class="flex h-4 justify-between">
+              <div class="h-full w-7 border-b border-l border-white"></div>
+              <div class="h-full w-7 border-b border-r border-white"></div>
+            </div>
           </div>
-        </h1>
-        <div class="flex h-4 justify-between">
-          <div class="h-full w-7 border-b border-l border-white"></div>
-          <div class="h-full w-7 border-b border-r border-white"></div>
+          <div class="mt-20 text-xl font-semibold">
+            December 30th &bull; 9am - 9pm
+          </div>
+          <button
+            class="mt-4 bg-epoch-light px-8 py-2.5 text-xl font-semibold text-black"
+            >Register</button
+          >
         </div>
-      </div>
-      <div class="mt-16 pl-[3.7rem] text-xl">
-        <div>December 30th &bull; 9am - 9pm</div>
-        <button class="mt-4 bg-pink-400 px-6 py-1.5 font-semibold text-black"
-          >Register</button
-        >
+        <div class="absolute bottom-4 left-6 text-gray-400">
+          Epoch BA is a hackathon organized by the attendees. Join us in the
+          <a
+            class="underline duration-300 hover:text-gray-100 hover:duration-150"
+            >#epoch-ba</a
+          > channel in the <a
+            class="underline duration-300 hover:text-gray-100 hover:duration-150"
+          >
+            Hack Club Slack</a
+          >.
+        </div>
       </div>
     </div>
   </body>
