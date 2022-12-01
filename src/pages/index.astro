@@ -24,8 +24,15 @@ import Glow from "../components/Glow.astro";
         <div class="flex flex-col lg:px-16">
           <div class="flex flex-col items-center lg:w-fit">
             <div>
-              <div class="flex h-4 justify-between">
+              <div class="flex h-6 justify-between">
                 <div class="h-full w-7 border-t border-l border-white"></div>
+                <div class="text-2xl font-light uppercase text-gray-200">
+                  <a
+                    href="https://hackclub.com"
+                    target="_blank"
+                    rel="noreferrer">Hack Club</a
+                  > Presents
+                </div>
                 <div class="h-full w-7 border-t border-r border-white"></div>
               </div>
               <h1 class="flex w-fit flex-col items-end pl-14 pr-16 uppercase">
@@ -38,7 +45,7 @@ import Glow from "../components/Glow.astro";
                   Bay Area
                 </div>
               </h1>
-              <div class="flex h-4 justify-between">
+              <div class="flex h-6 justify-between">
                 <div class="h-full w-7 border-b border-l border-white"></div>
                 <div class="h-full w-7 border-b border-r border-white"></div>
               </div>
@@ -72,23 +79,39 @@ import Glow from "../components/Glow.astro";
               Whether you've never written a line of code, or you've been
               hacking for years, we'd love for you to come!
             </p>
-            <p>
+            <p
+              class="[&>a]:text-epoch-light [&>a]:underline [&>a]:duration-300 [&>a:hover]:text-epoch-lighter [&>a:hover]:duration-150"
+            >
               Epoch BA is a hackathon organized by the attendees. Come organize
               with us in the
               <a
                 href="https://hackclub.slack.com/archives/C04AKL9UKEY"
                 target="_blank"
-                rel="noreferrer"
-                class="text-epoch-light underline duration-300 hover:text-epoch-lighter hover:duration-150"
-                >#epoch-ba</a
+                rel="noreferrer">#epoch-ba</a
               > channel in the <a
                 href="https://hackclub.com/slack"
                 target="_blank"
                 rel="noreferrer"
-                class="text-epoch-light underline duration-300 hover:text-epoch-lighter hover:duration-150"
               >
                 Hack Club Slack</a
               >.
+            </p>
+            <p
+              class="text-sm text-gray-300 sm:text-base [&>a]:underline [&>a]:duration-300 [&>a:hover]:text-white [&>a:hover]:duration-150"
+            >
+              Epoch, by <a
+                href="https://hackclub.com"
+                target="_blank"
+                rel="noreferrer">Hack Club</a
+              >, is a global event happening in regions (<a
+                href="https://epoch.hackclub.com"
+                target="_blank"
+                rel="noreferrer">New Delhi</a
+              >, <a
+                href="https://epochvt.hackclub.com"
+                target="_blank"
+                rel="noreferrer">Vermont</a
+              >, Austin) around the world.
             </p>
           </div>
         </div>
