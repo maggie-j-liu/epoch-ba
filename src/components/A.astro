@@ -1,0 +1,10 @@
+---
+const { href } = Astro.props;
+---
+
+<style>
+  a {
+    @apply text-epoch-light underline duration-300 hover:text-epoch-lighter hover:duration-150;
+  }
+</style>
+<a href={href} target="_blank" rel="noreferrer"><slot /></a>

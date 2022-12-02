@@ -1,0 +1,72 @@
+---
+import A from "../A.astro";
+import FaqCard from "./FaqCard.astro";
+import Question from "./Question.astro";
+---
+
+<style>
+  a {
+    @apply text-epoch-light underline duration-300 hover:text-epoch-lighter hover:duration-150;
+  }
+</style>
+<div>
+  <h2 class="text-center text-2xl font-bold">Frequently Asked Questions</h2>
+  <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+    <FaqCard>
+      <Question>What's Epoch and what's Epoch Bay Area?</Question>
+      <p>
+        <A href="https://epoch.hackclub.com">Epoch</A> is a high school hackathon
+        organized by teenagers in <A href="https://hackclub.com">Hack Club</A>,
+        taking place in New Delhi. Running alongside Epoch are regional events
+        (Epoch Bay Area is one of them).
+      </p>
+    </FaqCard>
+    <FaqCard>
+      <Question>Where is Epoch Bay Area taking place?</Question>
+      <p>
+        Epoch Bay Area will be held at Circuit Launch (located at <A
+          href="https://goo.gl/maps/NzU8Vy29XPRyFdN46"
+          >8000 Edgewater Dr., Ste. 200, Oakland, CA 94621</A
+        >), from 9am to 9pm on December 30th.
+      </p>
+    </FaqCard>
+    <FaqCard>
+      <Question>Who's eligible to participate?</Question>
+      <p>
+        All middle and high school students are welcome. You don't need any
+        coding experience to attend! If you've graduated high school but would
+        still like to help out (by mentoring or running a workshop), send us an
+        email at <a href="mailto:maggie@epoch.hackclub.com"
+          >maggie@epoch.hackclub.com</a
+        >.
+      </p>
+    </FaqCard>
+    <FaqCard>
+      <Question>How much does it cost?</Question>
+      <p>
+        Epoch Bay Area is completely free :D. We'll provide food (breakfast,
+        lunch, and dinner), snacks, and swag!
+      </p>
+    </FaqCard>
+    <FaqCard>
+      <Question>I signed up! Now what?</Question>
+      <p>
+        Awesome, can't wait to see you there! You'll receive an email in the
+        next couple of weeks with waivers you <em>must</em> fill out to attend. In
+        the meantime, join the <A href="https://hackclub.com/slack"
+          >Hack Club Slack</A
+        > and come chat with other attendees in the <A
+          href="https://hackclub.slack.com/archives/C04AKL9UKEY">#epoch-ba</A
+        > channel!
+      </p>
+    </FaqCard>
+    <FaqCard>
+      <Question>I have more questions, how can I reach out?</Question>
+      <p>
+        Email us at <a href="mailto:maggie@epoch.hackclub.com"
+          >maggie@epoch.hackclub.com</a
+        >, or ping @epochba-team in the Hack Club Slack.
+      </p>
+    </FaqCard>
+  </div>
+</div>

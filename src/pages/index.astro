@@ -1,5 +1,6 @@
 ---
 import Bridge from "../components/Bridge.astro";
+import Faq from "../components/Faq/index.astro";
 import Glow from "../components/Glow.astro";
 ---
 
@@ -18,114 +19,120 @@ import Glow from "../components/Glow.astro";
     />
   </head>
   <body class="bg-black text-white">
+    <div class="absolute left-0 right-0 bottom-0 -z-10"><Bridge /></div>
     <div class="relative min-h-screen overflow-x-hidden font-mono">
-      <div class="py-16 px-4">
-        <div class="absolute left-0 right-0 bottom-0 -z-10"><Bridge /></div>
-        <div class="flex flex-col lg:px-16">
-          <div class="flex flex-col items-center lg:w-fit">
-            <div>
-              <div class="flex h-6 justify-between">
-                <div class="h-full w-7 border-t border-l border-white"></div>
-                <div class="text-2xl font-light uppercase text-gray-200">
-                  <a
-                    href="https://hackclub.com"
-                    target="_blank"
-                    rel="noreferrer">Hack Club</a
-                  > Presents
+      <main class="space-y-20 py-16 px-4 lg:px-20">
+        <section>
+          <div class="flex flex-col">
+            <div class="flex flex-col items-center lg:w-fit">
+              <div>
+                <div class="flex h-6 justify-between">
+                  <div class="h-full w-7 border-t border-l border-white"></div>
+                  <div class="text-2xl font-light uppercase text-gray-200">
+                    <a
+                      href="https://hackclub.com"
+                      target="_blank"
+                      rel="noreferrer">Hack Club</a
+                    > Presents
+                  </div>
+                  <div class="h-full w-7 border-t border-r border-white"></div>
                 </div>
-                <div class="h-full w-7 border-t border-r border-white"></div>
-              </div>
-              <h1 class="flex w-fit flex-col items-end pl-14 pr-16 uppercase">
-                <Glow as="div" class="font-fira text-8xl sm:text-9xl font-bold"
-                  >Ep0ch</Glow
-                >
-                <div
-                  class="-mt-12 translate-y-9 text-2xl font-semibold text-epoch-lighter sm:text-4xl"
-                >
-                  Bay Area
+                <h1 class="flex w-fit flex-col items-end pl-14 pr-16 uppercase">
+                  <Glow
+                    as="div"
+                    class="font-fira text-8xl sm:text-9xl font-bold">Ep0ch</Glow
+                  >
+                  <div
+                    class="-mt-12 translate-y-9 text-2xl font-semibold text-epoch-lighter sm:text-4xl"
+                  >
+                    Bay Area
+                  </div>
+                </h1>
+                <div class="flex h-6 justify-between">
+                  <div class="h-full w-7 border-b border-l border-white"></div>
+                  <div class="h-full w-7 border-b border-r border-white"></div>
                 </div>
-              </h1>
-              <div class="flex h-6 justify-between">
-                <div class="h-full w-7 border-b border-l border-white"></div>
-                <div class="h-full w-7 border-b border-r border-white"></div>
               </div>
+              <div
+                class="mt-16 flex flex-col space-x-2 text-center text-xl font-semibold sm:flex-row"
+              >
+                <span>December 30th</span>
+                <span class="hidden text-gray-400 sm:block">&bull;</span>
+                <span class="font-normal leading-none text-gray-400 sm:hidden"
+                  >~</span
+                >
+                <span>9am - 9pm</span>
+                <span class="hidden text-gray-400 sm:block">&bull;</span>
+                <span class="font-normal leading-none text-gray-400 sm:hidden"
+                  >~</span
+                >
+                <a
+                  href="https://goo.gl/maps/NzU8Vy29XPRyFdN46"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="underline">Circuit Launch</a
+                >
+              </div>
+              <button
+                class="mt-4 bg-epoch px-8 py-2.5 text-xl font-semibold text-black"
+                >Register</button
+              >
             </div>
             <div
-              class="mt-16 flex flex-col space-x-2 text-center text-xl font-semibold sm:flex-row"
+              class="mx-auto mt-16 max-w-2xl space-y-6 text-center sm:text-xl lg:mx-0 lg:max-w-3xl lg:text-left"
             >
-              <span>December 30th</span>
-              <span class="hidden text-gray-400 sm:block">&bull;</span>
-              <span class="font-normal leading-none text-gray-400 sm:hidden"
-                >~</span
+              <p>
+                Join us for an epic 12 hours of <span class="text-epoch-light"
+                  >building projects</span
+                >, <span class="text-epoch-light">socializing</span>, and <span
+                  class="text-epoch-light">fun</span
+                >.
+              </p>
+              <p>
+                Whether you've never written a line of code, or you've been
+                hacking for years, we'd love for you to come!
+              </p>
+              <p
+                class="[&>a]:text-epoch-light [&>a]:underline [&>a]:duration-300 [&>a:hover]:text-epoch-lighter [&>a:hover]:duration-150"
               >
-              <span>9am - 9pm</span>
-              <span class="hidden text-gray-400 sm:block">&bull;</span>
-              <span class="font-normal leading-none text-gray-400 sm:hidden"
-                >~</span
+                Epoch BA is a hackathon organized by the attendees. Come
+                organize with us in the
+                <a
+                  href="https://hackclub.slack.com/archives/C04AKL9UKEY"
+                  target="_blank"
+                  rel="noreferrer">#epoch-ba</a
+                > channel in the <a
+                  href="https://hackclub.com/slack"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Hack Club Slack</a
+                >.
+              </p>
+              <p
+                class="text-sm text-gray-300 sm:text-base [&>a]:underline [&>a]:duration-300 [&>a:hover]:text-white [&>a:hover]:duration-150"
               >
-              <a
-                href="https://goo.gl/maps/NzU8Vy29XPRyFdN46"
-                target="_blank"
-                rel="noreferrer"
-                class="underline">Circuit Launch</a
-              >
+                Epoch, by <a
+                  href="https://hackclub.com"
+                  target="_blank"
+                  rel="noreferrer">Hack Club</a
+                >, is a global event happening in regions (<a
+                  href="https://epoch.hackclub.com"
+                  target="_blank"
+                  rel="noreferrer">New Delhi</a
+                >, <a
+                  href="https://epochvt.hackclub.com"
+                  target="_blank"
+                  rel="noreferrer">Vermont</a
+                >, Austin) around the world.
+              </p>
             </div>
-            <button
-              class="mt-4 bg-epoch px-8 py-2.5 text-xl font-semibold text-black"
-              >Register</button
-            >
           </div>
-          <div
-            class="mx-auto mt-16 max-w-2xl space-y-6 text-center sm:text-xl lg:mx-0 lg:max-w-3xl lg:text-left"
-          >
-            <p>
-              Join us for an epic 12 hours of <span class="text-epoch-light"
-                >building projects</span
-              >, <span class="text-epoch-light">socializing</span>, and <span
-                class="text-epoch-light">fun</span
-              >.
-            </p>
-            <p>
-              Whether you've never written a line of code, or you've been
-              hacking for years, we'd love for you to come!
-            </p>
-            <p
-              class="[&>a]:text-epoch-light [&>a]:underline [&>a]:duration-300 [&>a:hover]:text-epoch-lighter [&>a:hover]:duration-150"
-            >
-              Epoch BA is a hackathon organized by the attendees. Come organize
-              with us in the
-              <a
-                href="https://hackclub.slack.com/archives/C04AKL9UKEY"
-                target="_blank"
-                rel="noreferrer">#epoch-ba</a
-              > channel in the <a
-                href="https://hackclub.com/slack"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Hack Club Slack</a
-              >.
-            </p>
-            <p
-              class="text-sm text-gray-300 sm:text-base [&>a]:underline [&>a]:duration-300 [&>a:hover]:text-white [&>a:hover]:duration-150"
-            >
-              Epoch, by <a
-                href="https://hackclub.com"
-                target="_blank"
-                rel="noreferrer">Hack Club</a
-              >, is a global event happening in regions (<a
-                href="https://epoch.hackclub.com"
-                target="_blank"
-                rel="noreferrer">New Delhi</a
-              >, <a
-                href="https://epochvt.hackclub.com"
-                target="_blank"
-                rel="noreferrer">Vermont</a
-              >, Austin) around the world.
-            </p>
-          </div>
-        </div>
-      </div>
+        </section>
+        <section>
+          <Faq />
+        </section>
+      </main>
     </div>
   </body>
 </html>
