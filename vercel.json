@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/register",
+      "destination": "https://docs.google.com/forms/d/e/1FAIpQLScqqpa59CxCUzz_fbrwCdSHXPC4wqNR1UX1tI3YL8mV3y3Jkg/viewform",
+      "permanent": false
+    }
+  ]
+}
